@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foundation Intro</title>
+	<link rel="stylesheet" href="css/foundation.css">
+</head>
+<body style="background-color: gray;">
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Page 1.html">Projects</a></li>
+                <li><a href="page 2.html">Resume</a></li>
+                <li><a href="page 3.html">Fun</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <!-- `grid-x` represents a row -->
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-8 large-4" ></div>
+                    <div class="cell small-12" style="font-size: 3rem;" >PROJECTS</div>
+                    <div class="cell small-12" style="font-size: 2rem;" >HeroTable</div>
+                    <div class="cell small-12" >One project I've worked on is a simple one called hero table. It is a website with a single page that has a table with each row having a superhero. The columns were superhero name, their real name, whether or not their identity is secret, weaknesses they may have, if they have killed people before, and a column with the link to that characters Wikipedia page. Most of it is text but the “have they killed” section is a button that will give you an alert giving you the answer to your question. I made the entire thing from the CSS to the JavaScript to the HTML. Even though the website doesn't look that impressive it at least shows that I have a basic understanding of how HTML CSS and JavaScript work together and that I am able to make something with that knowledge.</div>
+                    <div class="cell small-12" ><img src="C:\Users\Khalid\OneDrive - University of St. Thomas\Pictures\Hero table image.png" alt="HeroTableImg"></div>
+                    <div class="cell small-12" style="font-size: 2rem;" >Statistical Data compilation</div>
+                    <div class="cell small-12" style="font-size: 1rem;" >This is a statistical project that I had to work on. The reason that I bring up this project as opposed to other projects is because this was done in Rstudio. If you've ever heard of that software you will know that it is finicky and can be confusing but he is an incredible statistical tool. This project shows not only the fact that I was able to learn R but that I was able to apply it to a real scenario. In this case I was not looking at hundreds of pieces of data instead I had a limited amount of data that I would be using to answer these questions. The thing I'm hoping to showcase here is not only my capability to use the programming language but also my ability to explain and understand the information that my code was producing.</div>
+                    <div class="cell small-12"  ><img src="C:\Users\Khalid\Downloads\problemset5-images\0001.jpg" alt=statIMG1></div>
+                    <div class="cell small-12"  ><img src="C:\Users\Khalid\Downloads\problemset5-images\0002.jpg" alt=statIMG2></div>
+                    <div class="cell small-12"  ><img src="C:\Users\Khalid\Downloads\problemset5-images\0003.jpg" alt=statIMG3></div>
+                    <div class="cell small-12" style="font-size: 2rem;" >Sawin numbers</div>
+                    <div class="cell small-12" style="font-size: 1rem;" > This project was an assignment in my computer architecture course. The assignment itself was to create a program that would calculate something called sawin numbers. This was the number pattern similar to the Fibonacci sequence only in the fact that it was a number pattern. The idea being that I would right up in such a way that one of the registries would populate with the answer. The point of showing this assignment is not for you to recognize my incredible math skills and my ability to code at all but the effect that since we were programming everything into registries we had a very limited number of resources and you had to be extremely detail oriented to complete this assignment. Instead of thinking of code in terms of loops and integers you have to think of each command you are throwing at the compiler as an expense that you need to cut down on. While somebody learning about it will normally not run into any problems with using all of their registries it is still a difficult thing to work around and learning to program not in functions but instead step by step is something that I'm happy to be able to call a skill since it's less about elevating your ability to code and more about elevating your ability to think while you code.</div>
+                    <div class="cell small-12"  ><img src="C:\Users\Khalid\Downloads\sawin numbers.png" alt=></div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell large-auto" style="background-color: #ffffff"></div>
+                    <div class="cell large-auto" style="background-color: #ffffff;"></div>
+                    <div class="cell large-auto" style="background-color: #ffffff;"></div>
+                    <div class="cell large-auto" style="background-color: #ffffff;"></div>
+                    <div class="cell large-auto" style="background-color: #ffffff;"></div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
